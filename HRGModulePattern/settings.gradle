@@ -1,0 +1,4 @@
+include ':moduleApp', ':moduleDIM'
+include ':moduleRIC'
+include ':moduleMain'
+include ':moduleCommon'

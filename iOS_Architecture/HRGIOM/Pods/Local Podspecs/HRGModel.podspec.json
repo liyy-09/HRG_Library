@@ -1,0 +1,35 @@
+{
+  "name": "HRGModel",
+  "version": "1.0.0",
+  "summary": "A short description of HRGModel.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/1290374862@qq.com/HRGModel",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "1290374862@qq.com": "1290374862@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/1290374862@qq.com/HRGModel.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "dependencies": {
+    "YYKit": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Code",
+      "source_files": [
+        "HRGModel/Model/*.{h,m}",
+        "HRGModel/Model/**/*.{h,m}"
+      ]
+    }
+  ]
+}

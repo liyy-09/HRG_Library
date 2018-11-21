@@ -1,0 +1,6 @@
+module Pods_HRGIOM [system] {
+  umbrella header "Pods-HRGIOM-umbrella.h"
+
+  export *
+  module * { export * }
+}

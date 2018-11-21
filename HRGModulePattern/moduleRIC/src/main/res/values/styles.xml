@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="ric_AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ric_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/ric_colorPrimaryDark</item>
+        <item name="colorAccent">@color/ric_colorAccent</item>
+    </style>
+
+</resources>

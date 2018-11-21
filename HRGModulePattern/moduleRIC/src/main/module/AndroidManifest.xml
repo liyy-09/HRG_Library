@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hrg.ric">
+
+    <application
+        android:name="debug.RICApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ric_ic_launcher"
+        android:label="@string/ric_app_name"
+        tools:replace="android:label"
+        android:roundIcon="@mipmap/ric_ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/ric_AppTheme">
+        <activity android:name=".activity.RICMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.DetailActivity"></activity>
+
+    </application>
+
+</manifest>

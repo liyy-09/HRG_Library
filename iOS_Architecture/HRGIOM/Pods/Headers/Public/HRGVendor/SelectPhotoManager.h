@@ -1,0 +1,1 @@
+../../../../../HRGVendor/HRGVendor/Vendor/SelectPhotoManager/SelectPhotoManager.h

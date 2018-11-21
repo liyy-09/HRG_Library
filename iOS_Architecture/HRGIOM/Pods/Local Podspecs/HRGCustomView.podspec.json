@@ -1,0 +1,48 @@
+{
+  "name": "HRGCustomView",
+  "version": "1.0.0",
+  "summary": "A short description of HRGCustomView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/1290374862@qq.com/HRGCustomView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "1290374862@qq.com": "1290374862@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/1290374862@qq.com/HRGCustomView.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "resource_bundles": {
+    "HRGCustomView": [
+      "HRGCustomView/*.xcassets"
+    ]
+  },
+  "dependencies": {
+    "Masonry": [
+
+    ],
+    "MJRefresh": [
+
+    ],
+    "MBProgressHUD": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Code",
+      "source_files": [
+        "HRGCustomView/Category/*.{h,m}",
+        "HRGCustomView/Tool/*.{h,m}",
+        "HRGCustomView/CustomView/*.{h,m}",
+        "HRGCustomView/CustomView/MJRefreshGif/*.{h,m}"
+      ]
+    }
+  ]
+}

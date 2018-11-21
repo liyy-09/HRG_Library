@@ -1,0 +1,45 @@
+{
+  "name": "HRGAccount",
+  "version": "1.0.0",
+  "summary": "A short description of HRGAccount.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/1290374862@qq.com/HRGAccount",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "1290374862@qq.com": "1290374862@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/1290374862@qq.com/HRGAccount.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "resource_bundles": {
+    "HRGAccount": [
+      "HRGAccount/*.xcassets",
+      "HRGAccount/**/*.storyboard"
+    ]
+  },
+  "dependencies": {
+    "YYKit": [
+
+    ],
+    "RTRootNavigationController": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Code",
+      "source_files": [
+        "HRGAccount/ViewController/*.{h,m}",
+        "HRGAccount/ViewModel/*.{h,m}",
+        "HRGAccount/Target/*.{h,m}"
+      ]
+    }
+  ]
+}

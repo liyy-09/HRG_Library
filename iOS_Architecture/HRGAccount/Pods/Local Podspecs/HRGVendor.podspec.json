@@ -1,0 +1,35 @@
+{
+  "name": "HRGVendor",
+  "version": "1.0.0",
+  "summary": "A short description of HRGVendor.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/1290374862@qq.com/HRGVendor",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "1290374862@qq.com": "1290374862@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/1290374862@qq.com/HRGVendor.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "dependencies": {
+    "YYKit": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Code",
+      "source_files": [
+        "HRGVendor/Vendor/**/*.{h,m}",
+        "HRGVendor/Vendor/SDCycleScrollView/PageControl/*.{h,m}"
+      ]
+    }
+  ]
+}
