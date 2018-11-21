@@ -10,8 +10,6 @@ import java.util.List;
 import java.util.Stack;
 
 /**
- * <p></p>
- *
  * @author liyy 2018/11/21
  * @name ViewManager
  */
@@ -36,6 +34,7 @@ public class ViewManager {
         if (fragmentList == null) {
             fragmentList = new ArrayList<>();
         }
+
         fragmentList.add(index, fragment);
     }
 
@@ -58,7 +57,7 @@ public class ViewManager {
      */
     public void addActivity(Activity activity) {
         if (activityStack == null) {
-            activityStack = new Stack<Activity>();
+            activityStack = new Stack<>();
         }
         activityStack.add(activity);
     }

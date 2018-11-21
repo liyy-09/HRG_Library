@@ -6,6 +6,7 @@ import com.hrg.common.utils.ClassUtils;
 import com.hrg.common.utils.Utils;
 import com.orhanobut.logger.LogLevel;
 import com.orhanobut.logger.Logger;
+import com.hrg.common.base.IApplicationDelegate;
 
 import java.util.List;
 

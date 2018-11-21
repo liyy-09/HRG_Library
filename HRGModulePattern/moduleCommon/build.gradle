@@ -71,7 +71,7 @@ dependencies {
     api deps.zloading
     api deps.pulltorefresh
 
-    //router
+    //router ARouter的文档：https://github.com/alibaba/ARouter/blob/master/README_CN.md
     api deps.arouter_api
 
     //annotationProcessor

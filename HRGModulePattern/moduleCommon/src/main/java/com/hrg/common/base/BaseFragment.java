@@ -10,7 +10,7 @@ import com.hrg.common.utils.Utils;
 /**
  * <p>Fragment的基类</p>
  *
- * @author 张华洋
+ * @author liyy 2018/11/21
  * @name BaseFragment
  */
 @Keep
