@@ -3,10 +3,7 @@
     package="com.hrg.ric" >
 
     <application android:theme="@style/ric_AppTheme">
-        <activity
-            android:name=".activity.RICMainActivity"
-            android:screenOrientation="portrait" />
-
+        <activity android:name=".activity.RICMainActivity" />
         <activity android:name=".activity.DetailActivity"></activity>
     </application>
 
