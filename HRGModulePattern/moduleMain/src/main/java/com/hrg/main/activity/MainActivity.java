@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.alibaba.android.arouter.facade.Postcard;
+import com.alibaba.android.arouter.facade.callback.NavigationCallback;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.hrg.common.base.BaseActivity;
 import com.hrg.main.R;
@@ -21,13 +23,13 @@ public class MainActivity extends BaseActivity {
 
                 startActivity(new Intent(MainActivity.this, BottomNavigationActivity.class));
 
-//                Bundle bundle = new Bundle();
-//                bundle.putInt("age", 28);
-//
-//                ARouter.getInstance()
-//                        .build("/ric/detail")
-//                        .with(bundle)
-//                        .navigation();
+                Bundle bundle = new Bundle();
+                bundle.putInt("age", 28);
+
+                ARouter.getInstance()
+                        .build("/ric/detail", "ric")
+                        .with(bundle)
+                        .navigation();
             }
         });
     }

@@ -7,7 +7,7 @@ import android.widget.TextView;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.hrg.ric.R;
 
-@Route(path = "/ric/detail")
+@Route(path = "/ric/detail", group = "ric")
 public class DetailActivity extends AppCompatActivity {
 
     @Override
