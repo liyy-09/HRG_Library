@@ -1,6 +1,7 @@
 package com.hrg.common.base;
 
 import android.app.Application;
+import android.content.Context;
 
 import com.hrg.common.utils.ClassUtils;
 import com.hrg.common.utils.Utils;
@@ -27,6 +28,8 @@ public class BaseApplication extends Application {
 
     private List<IApplicationDelegate> mAppDelegateList;
 
+    private static Context context;
+
     public static BaseApplication getInstance() {
         return instance;
     }
@@ -35,6 +38,7 @@ public class BaseApplication extends Application {
     public void onCreate() {
         super.onCreate();
         instance = this;
+        context = getApplicationContext();
 
         Logger.init("pattern").logLevel(LogLevel.FULL);
 
@@ -44,6 +48,10 @@ public class BaseApplication extends Application {
         for (IApplicationDelegate delegate : mAppDelegateList) {
             delegate.onCreate();
         }
+    }
+
+    public static Context getContext() {
+        return context;
     }
 
     @Override
