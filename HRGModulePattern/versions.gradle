@@ -1,4 +1,8 @@
 /**
+* Android组件化开发教程：https://github.com/guiying712/AndroidModulePattern#androidmodulepattern
+ *  */
+
+/**
  * Shared file between builds so that they can all use the same dependencies and
  * maven repositories.
  **/

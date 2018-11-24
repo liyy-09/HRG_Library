@@ -7,7 +7,7 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import com.hrg.common.base.BaseApplication;
 import com.hrg.common.utils.Utils;
 
-public class ProApplication extends BaseApplication {
+public class HRGApplication extends BaseApplication {
 
     @Override
     public void onCreate() {

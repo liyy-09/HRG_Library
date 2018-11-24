@@ -74,7 +74,8 @@ public abstract class BaseActivity extends AppCompatActivity {
      */
     protected void addFragment(BaseFragment fragment, @IdRes int frameId) {
         Utils.checkNotNull(fragment);
-        getSupportFragmentManager().beginTransaction()
+        getSupportFragmentManager()
+                .beginTransaction()
                 .add(frameId, fragment, fragment.getClass().getSimpleName())
                 .addToBackStack(fragment.getClass().getSimpleName())
                 .commitAllowingStateLoss();
@@ -87,7 +88,8 @@ public abstract class BaseActivity extends AppCompatActivity {
      */
     protected void replaceFragment(BaseFragment fragment, @IdRes int frameId) {
         Utils.checkNotNull(fragment);
-        getSupportFragmentManager().beginTransaction()
+        getSupportFragmentManager()
+                .beginTransaction()
                 .replace(frameId, fragment, fragment.getClass().getSimpleName())
                 .addToBackStack(fragment.getClass().getSimpleName())
                 .commitAllowingStateLoss();
