@@ -36,13 +36,27 @@
 - (void) addContent:(NSString *)text {
     UIImageView *imageView = [[UIImageView alloc]init];
     
+    // 1. 在main bundle中找到特定bundle
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"HRGCustomView.bundle" ofType:nil];
+    // 2. 载入bundle，即创建bundle对象
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    
     NSMutableArray *imageArray = [[NSMutableArray alloc] init];
     for (int i = 0; i < 52; i++) {
         NSString *name = [NSString stringWithFormat:@"Sprites_%d", i];
-        UIImage *img = [UIImage imageNamed:name];
         
-        if (img) {
-            [imageArray addObject:img];
+        // 3. 从bundle中获取资源路径(注意这里的图片位于通用资源目录下的Images二级目录，相对路径要明确这种关系)
+        NSString *path = [bundle pathForResource:name ofType:@"png"];
+        
+        UIImage *image;
+        if (path) {
+            image = [UIImage imageWithContentsOfFile:path];// 4. 通过路径创建对象
+        } else {
+            image = [UIImage imageNamed:name];
+        }
+        
+        if (image) {
+            [imageArray addObject:image];
         }
     }
     

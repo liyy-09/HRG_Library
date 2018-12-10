@@ -100,7 +100,7 @@
 
 #pragma mark - public method
 
-- (void) setNilDataWithImagePath:(NSString *) path tint:(NSString *)tint btnTitle:(NSString *)title isNeedAddData:(BOOL) isAdd {
+- (void) setNilDataWithImagePath:(NSString *)path tint:(NSString *)tint btnTitle:(NSString *)title isNeedAddData:(BOOL) isAdd {
     if (isAdd) {
         [_imageBtn addTarget:self action:@selector(refresh) forControlEvents:UIControlEventTouchUpInside];
     } else {
@@ -109,11 +109,24 @@
     }
     
     if (!path || [path isEqualToString:@""]) {
-        // 默认值
-        [_imageBtn setImage:[UIImage imageNamed:@"shoppingcar_n"] forState:UIControlStateNormal];
-    } else {
-        [_imageBtn setImage:[UIImage imageNamed:path] forState:UIControlStateNormal];
+        path = @"icon_jzsb";
     }
+    
+    // 1. 在main bundle中找到特定bundle
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"HRGCustomView.bundle" ofType:nil];
+    // 2. 载入bundle，即创建bundle对象
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    // 3. 从bundle中获取资源路径(注意这里的图片位于通用资源目录下的Images二级目录，相对路径要明确这种关系)
+    NSString *imagePath = [bundle pathForResource:path ofType:@"png"];
+    
+    UIImage *image;
+    if (imagePath) {
+        image = [UIImage imageWithContentsOfFile:path];// 4. 通过路径创建对象
+    } else {
+        image = [UIImage imageNamed:@"icon_jzsb"];
+    }
+    
+    [_imageBtn setImage:image forState:UIControlStateNormal];
     
     // 提示信息
     if (tint && ![tint isEqualToString:@""]) {
@@ -149,10 +162,24 @@
     }
     
     if (!path || [path isEqualToString:@""]) {
-        [_imageBtn setImage:[UIImage imageNamed:@"shoppingcar_n"] forState:UIControlStateNormal];
-    } else {
-        [_imageBtn setImage:[UIImage imageNamed:path] forState:UIControlStateNormal];
+        path = @"icon_jzsb";
     }
+    
+    // 1. 在main bundle中找到特定bundle
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"HRGCustomView.bundle" ofType:nil];
+    // 2. 载入bundle，即创建bundle对象
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    // 3. 从bundle中获取资源路径(注意这里的图片位于通用资源目录下的Images二级目录，相对路径要明确这种关系)
+    NSString *imagePath = [bundle pathForResource:path ofType:@"png"];
+    
+    UIImage *image;
+    if (imagePath) {
+        image = [UIImage imageWithContentsOfFile:path];// 4. 通过路径创建对象
+    } else {
+        image = [UIImage imageNamed:@"icon_jzsb"];
+    }
+    
+    [_imageBtn setImage:image forState:UIControlStateNormal];
     
     // 网络出错，需要点击图标刷新
     [_imageBtn addTarget:self action:@selector(refresh) forControlEvents:UIControlEventTouchUpInside];

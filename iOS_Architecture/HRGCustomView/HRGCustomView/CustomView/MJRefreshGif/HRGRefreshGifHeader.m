@@ -35,19 +35,35 @@
     self.statusLabel.textAlignment = NSTextAlignmentCenter;
     [self addSubview:self.statusLabel];
     
+    // 1. 在main bundle中找到特定bundle
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"HRGCustomView.bundle" ofType:nil];
+    // 2. 载入bundle，即创建bundle对象
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    
     NSMutableArray *imagearray = [[NSMutableArray alloc] init];
     for (int i = 0; i < 52; i++) {
         NSString *name = [NSString stringWithFormat:@"Sprites_%d", i];
-        UIImage *img = [UIImage imageNamed:name];
         
-        if (img) {
-            [imagearray addObject:img];
+        // 3. 从bundle中获取资源路径(注意这里的图片位于通用资源目录下的Images二级目录，相对路径要明确这种关系)
+        NSString *path = [bundle pathForResource:name ofType:@"png"];
+        
+        UIImage *image;
+        if (path) {
+            image = [UIImage imageWithContentsOfFile:path];// 4. 通过路径创建对象
+        } else {
+            image = [UIImage imageNamed:name];
+        }
+        
+        if (image) {
+            [imagearray addObject:image];
         }
     }
     
+    NSString *path = [bundle pathForResource:@"Sprites_0" ofType:@"png"];
+    
     self.refreshView = [[UIImageView alloc] init];
     self.refreshView.contentMode = UIViewContentModeCenter;
-    self.refreshView.image = [UIImage imageNamed:@"Sprites_0"];
+    self.refreshView.image = [UIImage imageWithContentsOfFile:path];
     self.refreshView.animationImages = imagearray;
     self.refreshView.animationDuration = 1;
     self.refreshView.animationRepeatCount = MAXFLOAT;

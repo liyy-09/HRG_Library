@@ -29,6 +29,8 @@
     
     HRGBaseNetDataRequest *request = [[HRGBaseNetDataRequest alloc] init];
     [request httpGetRequest:@"" params:nil requestModel:nil];
+    
+    [self showHub];
 }
 
 - (IBAction)asd:(id)sender {

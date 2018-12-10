@@ -35,7 +35,7 @@ TODO: Add long description of the pod here.
   end
 
   #s.resources = "HRGCustomView/Assets/*.png"
-  s.resource_bundle = { 'HRGCustomView' => ['HRGCustomView/*.xcassets']}
+  s.resource_bundle = { 'HRGCustomView' => ['HRGCustomView/*.xcassets', 'HRGCustomView/Image/*.png']}
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

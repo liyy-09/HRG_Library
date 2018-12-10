@@ -30,7 +30,19 @@
 }
 
 - (void) addItemView {
-    UIImage *image = [UIImage imageNamed:@"update_bg"];
+    // 1. 在main bundle中找到特定bundle
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"HRGCustomView.bundle" ofType:nil];
+    // 2. 载入bundle，即创建bundle对象
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    // 3. 从bundle中获取资源路径(注意这里的图片位于通用资源目录下的Images二级目录，相对路径要明确这种关系)
+    NSString *path = [bundle pathForResource:@"update_bg" ofType:@"png"];
+    
+    UIImage *image;
+    if (path) {
+        image = [UIImage imageWithContentsOfFile:path];// 4. 通过路径创建对象
+    } else {
+        image = [UIImage imageNamed:@"update_bg"];
+    }
     
     _bgView = [[UIView alloc] init];
     _bgView.backgroundColor = [UIColor clearColor];
