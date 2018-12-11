@@ -69,6 +69,7 @@
     [_imageBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self);
         make.centerY.equalTo(self).offset(-30);
+        make.size.equalTo(@(CGSizeMake(130, 130)));
     }];
     
     // 描述
@@ -121,7 +122,7 @@
     
     UIImage *image;
     if (imagePath) {
-        image = [UIImage imageWithContentsOfFile:path];// 4. 通过路径创建对象
+        image = [UIImage imageWithContentsOfFile:imagePath];// 4. 通过路径创建对象
     } else {
         image = [UIImage imageNamed:@"icon_jzsb"];
     }

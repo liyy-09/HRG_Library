@@ -73,6 +73,8 @@
 		6866766A21BE77C70028BDF8 /* Sprites_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6866763621BE77C70028BDF8 /* Sprites_2.png */; };
 		6866766B21BE77C70028BDF8 /* Sprites_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6866763721BE77C70028BDF8 /* Sprites_3.png */; };
 		6866766C21BE77C70028BDF8 /* Sprites_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 6866763821BE77C70028BDF8 /* Sprites_12.png */; };
+		68F00B4821BF969800FA9332 /* update_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F00B4621BF969700FA9332 /* update_bg.png */; };
+		68F00B4921BF969800FA9332 /* icon_jzsb.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F00B4721BF969800FA9332 /* icon_jzsb.png */; };
 		FB59B9C347DDE2E2F731581F /* libPods-HRGCustomView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57240419C71DD3E1030D2A61 /* libPods-HRGCustomView.a */; };
 /* End PBXBuildFile section */
 
@@ -157,6 +159,8 @@
 		6866763621BE77C70028BDF8 /* Sprites_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sprites_2.png; sourceTree = "<group>"; };
 		6866763721BE77C70028BDF8 /* Sprites_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sprites_3.png; sourceTree = "<group>"; };
 		6866763821BE77C70028BDF8 /* Sprites_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sprites_12.png; sourceTree = "<group>"; };
+		68F00B4621BF969700FA9332 /* update_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = update_bg.png; sourceTree = "<group>"; };
+		68F00B4721BF969800FA9332 /* icon_jzsb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_jzsb.png; sourceTree = "<group>"; };
 		D157AC364CCECAB701046A24 /* Pods-HRGCustomView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRGCustomView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HRGCustomView/Pods-HRGCustomView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -258,6 +262,8 @@
 		6866760421BE77C70028BDF8 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				68F00B4721BF969800FA9332 /* icon_jzsb.png */,
+				68F00B4621BF969700FA9332 /* update_bg.png */,
 				6866760521BE77C70028BDF8 /* Sprites_37.png */,
 				6866760621BE77C70028BDF8 /* Sprites_23.png */,
 				6866760721BE77C70028BDF8 /* Sprites_22.png */,
@@ -444,6 +450,7 @@
 				6866766321BE77C70028BDF8 /* Sprites_38.png in Resources */,
 				6866764921BE77C70028BDF8 /* Sprites_32.png in Resources */,
 				6866763D21BE77C70028BDF8 /* Sprites_20.png in Resources */,
+				68F00B4821BF969800FA9332 /* update_bg.png in Resources */,
 				6866765321BE77C70028BDF8 /* Sprites_51.png in Resources */,
 				6866763F21BE77C70028BDF8 /* Sprites_35.png in Resources */,
 				6866764821BE77C70028BDF8 /* Sprites_18.png in Resources */,
@@ -453,6 +460,7 @@
 				6866766921BE77C70028BDF8 /* Sprites_13.png in Resources */,
 				6866764621BE77C70028BDF8 /* Sprites_30.png in Resources */,
 				6866764E21BE77C70028BDF8 /* Sprites_41.png in Resources */,
+				68F00B4921BF969800FA9332 /* icon_jzsb.png in Resources */,
 				6866766C21BE77C70028BDF8 /* Sprites_12.png in Resources */,
 				6866763B21BE77C70028BDF8 /* Sprites_22.png in Resources */,
 				6866763A21BE77C70028BDF8 /* Sprites_23.png in Resources */,
