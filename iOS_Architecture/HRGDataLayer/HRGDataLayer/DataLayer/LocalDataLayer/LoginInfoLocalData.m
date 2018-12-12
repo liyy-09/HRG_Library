@@ -87,6 +87,7 @@ static LoginInfoLocalData *instance;
 - (void) clearInfo {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
+    // 保留手机号，删除密码
 //    [defaults setObject:@"" forKey:accountKey];
     [defaults setObject:@"" forKey:passwordKey];
     
@@ -114,32 +115,6 @@ static LoginInfoLocalData *instance;
 
 - (void) removeLoginModel {
     [_yyCache removeObjectForKey:loginModelKey];
-}
-
-#pragma mark - 云信
-
-// 保存云信信息
-- (void) saveAccid:(NSString *)accid token:(NSString *)token {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    
-    [defaults setObject:accid forKey:@"nimAccid"];
-    [defaults setObject:token forKey:@"nimToken"];
-    
-    [defaults synchronize];
-}
-
-- (NSString *) nimAccid {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *accid = [defaults objectForKey:@"nimAccid"];
-    
-    return accid;
-}
-
-- (NSString *) nimToken {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *token = [defaults objectForKey:@"nimToken"];
-    
-    return token;
 }
 
 @end

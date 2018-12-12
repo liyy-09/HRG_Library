@@ -18,6 +18,7 @@
 		68E637C121A3BA760036CD86 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E637C021A3BA760036CD86 /* LoginViewModel.m */; };
 		68E637C521A3BAB90036CD86 /* HRGBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E637C421A3BAB90036CD86 /* HRGBaseViewModel.m */; };
 		68E637FB21A4044C0036CD86 /* Target_Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E637FA21A4044C0036CD86 /* Target_Login.m */; };
+		68F00B4C21BFAC4100FA9332 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F00B4B21BFAC4100FA9332 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		68E637C421A3BAB90036CD86 /* HRGBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRGBaseViewModel.m; sourceTree = "<group>"; };
 		68E637F921A4044C0036CD86 /* Target_Login.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_Login.h; sourceTree = "<group>"; };
 		68E637FA21A4044C0036CD86 /* Target_Login.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Login.m; sourceTree = "<group>"; };
+		68F00B4A21BFAC4100FA9332 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		68F00B4B21BFAC4100FA9332 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		90EBB7AA6D9C65EFD8DABA5C /* Pods-HRGAccount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRGAccount.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRGAccount/Pods-HRGAccount.release.xcconfig"; sourceTree = "<group>"; };
 		9166CB1C854F4F2DF3A4067B /* libPods-HRGAccount.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HRGAccount.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A355DBD717CE09A1A95C172D /* Pods-HRGAccount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRGAccount.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HRGAccount/Pods-HRGAccount.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +91,8 @@
 				6813A93F21A2B6A300E4267B /* Assets.xcassets */,
 				6813A94421A2B6A300E4267B /* Info.plist */,
 				6813A94521A2B6A300E4267B /* main.m */,
+				68F00B4A21BFAC4100FA9332 /* ViewController.h */,
+				68F00B4B21BFAC4100FA9332 /* ViewController.m */,
 			);
 			path = HRGAccount;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 			files = (
 				68E637BA21A3B93E0036CD86 /* LoginViewController.m in Sources */,
 				68E637C521A3BAB90036CD86 /* HRGBaseViewModel.m in Sources */,
+				68F00B4C21BFAC4100FA9332 /* ViewController.m in Sources */,
 				68E637C121A3BA760036CD86 /* LoginViewModel.m in Sources */,
 				6813A94621A2B6A300E4267B /* main.m in Sources */,
 				6813A93821A2B6A100E4267B /* AppDelegate.m in Sources */,

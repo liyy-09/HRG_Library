@@ -27,11 +27,6 @@
 - (NSString*) getPassword;
 - (void) clearInfo;// 清除登录信息
 
-// 保存云信信息
-- (void) saveAccid:(NSString *)accid token:(NSString *)token;
-- (NSString *) nimAccid;
-- (NSString *) nimToken;
-
 - (void) saveLoginModel:(LoginModel *)loginModel;
 - (LoginModel *) getLoginModel;
 - (NSString *) getUserPhoto;

@@ -48,7 +48,7 @@
     return [[UIStoryboard storyboardWithName:@"Mine" bundle:nil] instantiateViewControllerWithIdentifier:@"LoginViewController"];
 }
 
-- (instancetype) initWithStoryborad {
+- (instancetype) initWithStoryboard {
     NSBundle *podBundle = [NSBundle bundleForClass:LoginViewController.class];
     NSURL *url = [podBundle URLForResource:@"HRGAccount" withExtension:@"bundle"];
     
@@ -70,6 +70,7 @@
     [_pswTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
     
     self.accountTextField.text = [[LoginInfoLocalData sharedInstance] getAccount];
+//    self.pswTextField.text = [[LoginInfoLocalData sharedInstance] getPassword];
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -134,6 +135,16 @@
     
     [self showHubWithLoadText:@"正在登录"];
     [self.viewModel.loginCommand execute:nil];
+}
+
+// 忘记密码
+- (IBAction)forgetPwd:(id)sender {
+    // TODO
+}
+
+// 创建帐号
+- (IBAction)registerAccount:(id)sender {
+    // TODO
 }
 
 #pragma mark - getter

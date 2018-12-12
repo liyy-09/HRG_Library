@@ -21,7 +21,7 @@ typedef void(^RouterCallBack)(NSString *);
 @implementation Target_Login
 
 - (UIViewController *)Action_viewController:(NSDictionary *)params {
-    LoginViewController *vc = [[LoginViewController alloc] initWithStoryborad];
+    LoginViewController *vc = [[LoginViewController alloc] initWithStoryboard];
     
     self.callback = params[@"callback"];
     self.callback(@"这是路由回调的数据");

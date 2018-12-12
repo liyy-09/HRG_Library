@@ -126,7 +126,7 @@
 }
 
 - (void) toLoginViewWithCommend:(RACCommand *)commend {
-    LoginViewController *controller = [[LoginViewController alloc] initWithStoryborad];
+    LoginViewController *controller = [[LoginViewController alloc] initWithStoryboard];
     [controller.loginSuccessSubject subscribeNext:^(id x) {
         if (commend) {
             [commend execute:nil];// 登录成功之后的操作

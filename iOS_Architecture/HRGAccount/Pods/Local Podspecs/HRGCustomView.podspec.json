@@ -20,7 +20,8 @@
   },
   "resource_bundles": {
     "HRGCustomView": [
-      "HRGCustomView/*.xcassets"
+      "HRGCustomView/*.xcassets",
+      "HRGCustomView/Image/*.png"
     ]
   },
   "dependencies": {

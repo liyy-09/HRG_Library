@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "LoginViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -29,7 +29,7 @@
     [self.window makeKeyAndVisible];
     
     // 设置UI
-    LoginViewController *vc = [[LoginViewController alloc] initWithSelfStoryborad];
+    ViewController *vc = [[ViewController alloc] init];
     self.window.rootViewController = vc;
     
     return YES;

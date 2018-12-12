@@ -8,38 +8,35 @@
 
 #import "LoginModel.h"
 
-@implementation UserModel
+@implementation LoginModel
 
 + (nullable NSDictionary<NSString *, id> *)modelCustomPropertyMapper {
     return @{ @"userID" : @"id" };
 }
 
 + (instancetype) convertFromDict:(NSDictionary *)dict {
-    UserModel *model = [UserModel modelWithDictionary:dict];
-    return model;
-}
-
-- (NSString *)memberDesc {
-    NSMutableString *res = [[NSMutableString alloc] init];
-    if (_memeberCode && ![_memeberCode isEqualToString:@""]) {
-        [res appendString:[NSString stringWithFormat:@"会员等级:%@  ", _memeberCode]];
-    }
-    
-    if (_memberPoint && ![_memberPoint isEqualToString:@""]) {
-        [res appendString:[NSString stringWithFormat:@"会员积分:%@", _memberPoint]];
-    }
-    
-    return [NSString stringWithFormat:@"%@", res];
-}
-
-@end
-
-@implementation LoginModel
-
-+ (instancetype) convertFromDict:(NSDictionary *)dict {
     LoginModel *model = [LoginModel modelWithDictionary:dict];
     
     return model;
+}
+
+// 0保密 1男 2女
+- (NSString *)sexDesc {
+    if ([self.sex isEqualToString:@"1"]) {
+        return @"男";
+    } else if ([self.sex isEqualToString:@"2"]) {
+        return @"女";
+    } else {
+        return @"保密";
+    }
+}
+
+- (NSString *) idcardDesc {
+    if (_idcard && ![_idcard isEqualToString:@""]) {
+        return _idcard;
+    }
+    
+    return @"保密";
 }
 
 @end
