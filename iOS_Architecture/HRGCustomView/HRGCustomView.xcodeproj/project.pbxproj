@@ -73,6 +73,8 @@
 		6866766A21BE77C70028BDF8 /* Sprites_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6866763621BE77C70028BDF8 /* Sprites_2.png */; };
 		6866766B21BE77C70028BDF8 /* Sprites_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6866763721BE77C70028BDF8 /* Sprites_3.png */; };
 		6866766C21BE77C70028BDF8 /* Sprites_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 6866763821BE77C70028BDF8 /* Sprites_12.png */; };
+		68BB64C421C235D3007B198A /* HRGSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BB64C221C235D2007B198A /* HRGSegmentedControl.h */; };
+		68BB64C521C235D3007B198A /* HRGSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BB64C321C235D2007B198A /* HRGSegmentedControl.m */; };
 		68F00B4821BF969800FA9332 /* update_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F00B4621BF969700FA9332 /* update_bg.png */; };
 		68F00B4921BF969800FA9332 /* icon_jzsb.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F00B4721BF969800FA9332 /* icon_jzsb.png */; };
 		FB59B9C347DDE2E2F731581F /* libPods-HRGCustomView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57240419C71DD3E1030D2A61 /* libPods-HRGCustomView.a */; };
@@ -159,6 +161,8 @@
 		6866763621BE77C70028BDF8 /* Sprites_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sprites_2.png; sourceTree = "<group>"; };
 		6866763721BE77C70028BDF8 /* Sprites_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sprites_3.png; sourceTree = "<group>"; };
 		6866763821BE77C70028BDF8 /* Sprites_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sprites_12.png; sourceTree = "<group>"; };
+		68BB64C221C235D2007B198A /* HRGSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRGSegmentedControl.h; sourceTree = "<group>"; };
+		68BB64C321C235D2007B198A /* HRGSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRGSegmentedControl.m; sourceTree = "<group>"; };
 		68F00B4621BF969700FA9332 /* update_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = update_bg.png; sourceTree = "<group>"; };
 		68F00B4721BF969800FA9332 /* icon_jzsb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_jzsb.png; sourceTree = "<group>"; };
 		D157AC364CCECAB701046A24 /* Pods-HRGCustomView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRGCustomView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HRGCustomView/Pods-HRGCustomView.debug.xcconfig"; sourceTree = "<group>"; };
@@ -233,6 +237,8 @@
 				6813A97921A2BDA400E4267B /* PromptView.m */,
 				6813A97C21A2BDA400E4267B /* VersionUpdateView.h */,
 				6813A97A21A2BDA400E4267B /* VersionUpdateView.m */,
+				68BB64C221C235D2007B198A /* HRGSegmentedControl.h */,
+				68BB64C321C235D2007B198A /* HRGSegmentedControl.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -344,6 +350,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68BB64C421C235D3007B198A /* HRGSegmentedControl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +522,7 @@
 			files = (
 				6813A97F21A2BDA400E4267B /* SelectView.m in Sources */,
 				046B86F421A2A7AF007A3AF5 /* ViewController.m in Sources */,
+				68BB64C521C235D3007B198A /* HRGSegmentedControl.m in Sources */,
 				6813A97E21A2BDA400E4267B /* MBProgressHUDTool.m in Sources */,
 				6813A98D21A2BDFD00E4267B /* UILabel+lineSpace.m in Sources */,
 				6813A98021A2BDA400E4267B /* HRGRefreshGifHeader.m in Sources */,

@@ -40,4 +40,12 @@
     
 }
 
+- (RACSubject *) tokenSubject {
+    if (!_tokenSubject) {
+        _tokenSubject = [RACSubject subject];
+    }
+    
+    return _tokenSubject;
+}
+
 @end

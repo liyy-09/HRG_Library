@@ -13,4 +13,6 @@
 
 @property (nonatomic, strong) HRGBaseNetDataRequest *request;
 
+@property (nonatomic, strong) RACSubject *tokenSubject;
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSArray+Boundary.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSArray *array = [[NSArray alloc]initWithObjects:@"111",@"222", nil];
+    
+    NSString *res = [array objectAtIndex:3];
+    NSLog(@"------>> %@", res);
 }
 
 

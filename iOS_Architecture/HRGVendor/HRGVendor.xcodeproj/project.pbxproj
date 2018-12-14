@@ -23,6 +23,7 @@
 		046B878B21A2A855007A3AF5 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B877E21A2A855007A3AF5 /* TAPageControl.m */; };
 		046B878C21A2A855007A3AF5 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B877F21A2A855007A3AF5 /* TAAnimatedDotView.m */; };
 		046B878D21A2A855007A3AF5 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B878021A2A855007A3AF5 /* TAAbstractDotView.m */; };
+		68BB64B721C201A5007B198A /* NSArray+Boundary.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BB64B621C201A5007B198A /* NSArray+Boundary.m */; };
 		B976099D3D1BA34899C484DE /* libPods-HRGVendor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0B72DD4CEDD894E7B6AD7 /* libPods-HRGVendor.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,8 @@
 		046B878321A2A855007A3AF5 /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
 		18954CEB62B2E37275144AF2 /* Pods-HRGVendor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRGVendor.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRGVendor/Pods-HRGVendor.release.xcconfig"; sourceTree = "<group>"; };
 		22E0B72DD4CEDD894E7B6AD7 /* libPods-HRGVendor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HRGVendor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68BB64B521C201A5007B198A /* NSArray+Boundary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Boundary.h"; sourceTree = "<group>"; };
+		68BB64B621C201A5007B198A /* NSArray+Boundary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Boundary.m"; sourceTree = "<group>"; };
 		F93EAC5D385980A944EE1EBF /* Pods-HRGVendor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRGVendor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HRGVendor/Pods-HRGVendor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +115,7 @@
 		046B876B21A2A855007A3AF5 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				68BB64B421C2018B007B198A /* RunTime */,
 				046B876C21A2A855007A3AF5 /* HWWeakTimer */,
 				046B877121A2A855007A3AF5 /* SelectPhotoManager */,
 				046B877421A2A855007A3AF5 /* SDCycleScrollView */,
@@ -174,6 +178,15 @@
 				22E0B72DD4CEDD894E7B6AD7 /* libPods-HRGVendor.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68BB64B421C2018B007B198A /* RunTime */ = {
+			isa = PBXGroup;
+			children = (
+				68BB64B521C201A5007B198A /* NSArray+Boundary.h */,
+				68BB64B621C201A5007B198A /* NSArray+Boundary.m */,
+			);
+			path = RunTime;
 			sourceTree = "<group>";
 		};
 		DB6CC6A6C6B6E8387785874C /* Pods */ = {
@@ -281,6 +294,7 @@
 				046B878721A2A855007A3AF5 /* SDCycleScrollView.m in Sources */,
 				046B86B021A2A71B007A3AF5 /* ViewController.m in Sources */,
 				046B86BB21A2A71C007A3AF5 /* main.m in Sources */,
+				68BB64B721C201A5007B198A /* NSArray+Boundary.m in Sources */,
 				046B878521A2A855007A3AF5 /* OYCountDownManager.m in Sources */,
 				046B878621A2A855007A3AF5 /* SelectPhotoManager.m in Sources */,
 				046B878B21A2A855007A3AF5 /* TAPageControl.m in Sources */,
