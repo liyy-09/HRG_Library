@@ -19,6 +19,9 @@
 		68E637C521A3BAB90036CD86 /* HRGBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E637C421A3BAB90036CD86 /* HRGBaseViewModel.m */; };
 		68E637FB21A4044C0036CD86 /* Target_Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E637FA21A4044C0036CD86 /* Target_Login.m */; };
 		68F00B4C21BFAC4100FA9332 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F00B4B21BFAC4100FA9332 /* ViewController.m */; };
+		68FE2E1D21C8DE1F008B0CD9 /* UpdatePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FE2E1921C8DE1B008B0CD9 /* UpdatePwdViewController.m */; };
+		68FE2E1E21C8DE1F008B0CD9 /* ForgetPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FE2E1B21C8DE1D008B0CD9 /* ForgetPwdViewController.m */; };
+		68FE2E2121C8DE64008B0CD9 /* PwdViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FE2E2021C8DE64008B0CD9 /* PwdViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,12 @@
 		68E637FA21A4044C0036CD86 /* Target_Login.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Login.m; sourceTree = "<group>"; };
 		68F00B4A21BFAC4100FA9332 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		68F00B4B21BFAC4100FA9332 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		68FE2E1921C8DE1B008B0CD9 /* UpdatePwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdatePwdViewController.m; sourceTree = "<group>"; };
+		68FE2E1A21C8DE1C008B0CD9 /* ForgetPwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPwdViewController.h; sourceTree = "<group>"; };
+		68FE2E1B21C8DE1D008B0CD9 /* ForgetPwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPwdViewController.m; sourceTree = "<group>"; };
+		68FE2E1C21C8DE1F008B0CD9 /* UpdatePwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdatePwdViewController.h; sourceTree = "<group>"; };
+		68FE2E1F21C8DE64008B0CD9 /* PwdViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PwdViewModel.h; sourceTree = "<group>"; };
+		68FE2E2021C8DE64008B0CD9 /* PwdViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PwdViewModel.m; sourceTree = "<group>"; };
 		90EBB7AA6D9C65EFD8DABA5C /* Pods-HRGAccount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRGAccount.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRGAccount/Pods-HRGAccount.release.xcconfig"; sourceTree = "<group>"; };
 		9166CB1C854F4F2DF3A4067B /* libPods-HRGAccount.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HRGAccount.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A355DBD717CE09A1A95C172D /* Pods-HRGAccount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRGAccount.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HRGAccount/Pods-HRGAccount.debug.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +121,10 @@
 				68E637BC21A3B9620036CD86 /* HRGBaseAccountViewController.m */,
 				68E637B821A3B93E0036CD86 /* LoginViewController.h */,
 				68E637B921A3B93E0036CD86 /* LoginViewController.m */,
+				68FE2E1A21C8DE1C008B0CD9 /* ForgetPwdViewController.h */,
+				68FE2E1B21C8DE1D008B0CD9 /* ForgetPwdViewController.m */,
+				68FE2E1C21C8DE1F008B0CD9 /* UpdatePwdViewController.h */,
+				68FE2E1921C8DE1B008B0CD9 /* UpdatePwdViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -124,6 +137,8 @@
 				68E637C421A3BAB90036CD86 /* HRGBaseViewModel.m */,
 				68E637BF21A3BA760036CD86 /* LoginViewModel.h */,
 				68E637C021A3BA760036CD86 /* LoginViewModel.m */,
+				68FE2E1F21C8DE64008B0CD9 /* PwdViewModel.h */,
+				68FE2E2021C8DE64008B0CD9 /* PwdViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -267,14 +282,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68FE2E2121C8DE64008B0CD9 /* PwdViewModel.m in Sources */,
 				68E637BA21A3B93E0036CD86 /* LoginViewController.m in Sources */,
 				68E637C521A3BAB90036CD86 /* HRGBaseViewModel.m in Sources */,
 				68F00B4C21BFAC4100FA9332 /* ViewController.m in Sources */,
 				68E637C121A3BA760036CD86 /* LoginViewModel.m in Sources */,
+				68FE2E1D21C8DE1F008B0CD9 /* UpdatePwdViewController.m in Sources */,
 				6813A94621A2B6A300E4267B /* main.m in Sources */,
 				6813A93821A2B6A100E4267B /* AppDelegate.m in Sources */,
 				68E637FB21A4044C0036CD86 /* Target_Login.m in Sources */,
 				68E637BD21A3B9620036CD86 /* HRGBaseAccountViewController.m in Sources */,
+				68FE2E1E21C8DE1F008B0CD9 /* ForgetPwdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,29 @@
 #import "LoginInfoLocalData.h"
 #import "LoginModel.h"
 
+// ---------------- 屏幕宽高 ----------------
+#define HRGScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define HRGScreenHeight [[UIScreen mainScreen] bounds].size.height
+
+//是否iPhoneX YES:iPhoneX屏幕 NO:传统屏幕
+#define kIs_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+#define HRGBarHeight (kIs_iPhoneX ? 44 : 20)
+#define HRGNavHeight 44
+#define HRGTabBarHeight (kIs_iPhoneX ? (49 + 34) : 49)
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define UIColorFromRGBA(rgbValue,trans) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:trans]
+
+#define HRGThemeColor 0x1AAAF7
+
+// ---------------- 设置圆角和边框 ----------------
+#define HRGViewBorderRadius(View, Radius, Width, Color)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
+
 @protocol HRGAccountVCProtocol <NSObject>
 
 @optional

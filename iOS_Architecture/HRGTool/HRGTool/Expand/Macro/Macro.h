@@ -55,7 +55,7 @@
 #define HRGColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 
 // ----------------  颜色代码 ----------------
-#define HRGThemeColor 0x09336D
+#define HRGThemeColor 0x1AAAF7
 // 背景颜色
 #define HRGBackGroundColor 0xeeeeee
 // 字体颜色

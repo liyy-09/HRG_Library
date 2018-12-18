@@ -27,7 +27,7 @@
 }
 
 - (void) login {
-    LoginViewController *controller = [[LoginViewController alloc] initWithSelfStoryborad];
+    LoginViewController *controller = [[LoginViewController alloc] initWithStoryboard];
     [controller.loginSuccessSubject subscribeNext:^(id x) {
         
     }];

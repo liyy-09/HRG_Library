@@ -233,6 +233,15 @@
     return res;
 }
 
++ (BOOL) isValidPassword:(NSString *)pwd {
+    //以字母开头，只能包含“字母”，“数字”，“特殊符号”，长度6~16
+    NSString *regex = @"^([a-zA-Z]|[a-zA-Z0-9_\\[\\-()（）”“\\$&@%^*?+?=|\\{\\}\\?【】？￥!！.<>/:;：；、,，。\\]]|[0-9]){6,16}$";
+    NSPredicate *pre = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
+    BOOL res = [pre evaluateWithObject:pwd];
+    
+    return res;
+}
+
 + (BOOL) checkSocialID:(NSString *)socialID {
     NSString *emailCheck = @"^([a-zA-Z0-9]){5,80}$";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES%@", emailCheck];

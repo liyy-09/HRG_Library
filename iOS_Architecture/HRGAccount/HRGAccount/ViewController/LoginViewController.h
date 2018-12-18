@@ -12,7 +12,6 @@
 
 @property (nonatomic, strong) RACSubject *loginSuccessSubject;
 
-- (instancetype) initWithSelfStoryborad;
 - (instancetype) initWithStoryboard;
 
 @end

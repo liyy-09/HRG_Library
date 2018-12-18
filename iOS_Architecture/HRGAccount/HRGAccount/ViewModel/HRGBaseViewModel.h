@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "HRGViewModelProtocol.h"
 
+// ---------------------- 域名 ----------------------
+#define AccountHost             @"http://60.174.207.15:8085/ztlapi"
+//#define AccountHost             @"http://wisangel.com/ztlapi"
+
 @interface HRGBaseViewModel : NSObject<HRGViewModelProtocol>
 
 @property (nonatomic, strong) HRGBaseNetDataRequest *request;

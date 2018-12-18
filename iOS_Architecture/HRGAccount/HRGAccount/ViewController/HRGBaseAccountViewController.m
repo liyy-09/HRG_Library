@@ -42,7 +42,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.barTintColor = UIColorFromRGB(0x09336D);// 导航栏背景颜色
+    self.navigationController.navigationBar.barTintColor = UIColorFromRGB(0x1AAAF7);// 导航栏背景颜色
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];// item字体颜色
     
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];

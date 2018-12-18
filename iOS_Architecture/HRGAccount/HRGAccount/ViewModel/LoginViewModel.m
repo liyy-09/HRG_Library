@@ -12,15 +12,6 @@
 #import "DES3Util.h"
 #import "UseInfoLocalData.h"
 
-// ---------------------- 域名 ----------------------
-#define Host                @"http://60.174.207.15:8085/ztlapi"
-//#define Host                @"http://wisangel.com/ztlapi"
-
-// 账户名或手机号加密码登录
-#define Login_url                   Host"/member/login"
-// 用户退出接口
-#define Logout_url                  Host"/login/logout"
-
 @implementation Account
 
 - (NSString *) account {

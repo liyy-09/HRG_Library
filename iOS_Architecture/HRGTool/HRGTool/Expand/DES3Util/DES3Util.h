@@ -32,6 +32,7 @@
 
 + (BOOL) isNickname:(NSString *)nickName;
 + (BOOL) isUserName:(NSString *)username;
++ (BOOL) isValidPassword:(NSString *)pwd;
 + (BOOL) checkUserID:(NSString *)userID;
 + (BOOL) checkSocialID:(NSString *)socialID;
 
