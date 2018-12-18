@@ -10,8 +10,8 @@
 #import <CommonCrypto/CommonCryptor.h>
 #import "GTMBase64.h"
 
-#define gkey			@"changxinganhui2015*08*27"
-#define gIv             @"01234567"
+#define gkey			@""
+#define gIv             @""
 
 @implementation DES3Util
 

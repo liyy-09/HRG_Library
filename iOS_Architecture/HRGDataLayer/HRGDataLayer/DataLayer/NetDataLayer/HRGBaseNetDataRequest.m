@@ -215,7 +215,7 @@
                 [self gainCacheDataWithSubscriber:subscriber error:error cache:cache cacheKey:cacheKey isCache:isCache tint:model.queryFailureHint requestModel:model];
             }];
         } else if (requestType == RequestTypeUpLoad) {// UpLoad
-            [session POST:url parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+            [session POST:url parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
                 if (fileName) {
                     [formData appendPartWithFileData:data name:name fileName:fileName mimeType:model.imageMimeType];
                 } else {
@@ -223,18 +223,20 @@
                     [formData appendPartWithFileData:data name:name fileName:newFileName mimeType:model.imageMimeType];
                 }
             } progress:^(NSProgress * _Nonnull uploadProgress) {
+                NSLog(@"======> %f", (float)uploadProgress.completedUnitCount / (float)uploadProgress.totalUnitCount);
+                
                 NetDataReturnModel *returnModel = [[NetDataReturnModel alloc] init];
                 returnModel.type = ReturnProcess;
                 returnModel.process = (float)uploadProgress.completedUnitCount / (float)uploadProgress.totalUnitCount;
                 [subscriber sendNext:returnModel];
-                [subscriber sendCompleted];
-            } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//                [subscriber sendCompleted];
+            } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
                 [self dealWithSubscriber:subscriber responseObject:responseObject cache:cache isCache:isCache cacheKey:cacheKey requestModel:model];
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 [self gainCacheDataWithSubscriber:subscriber error:error cache:cache cacheKey:cacheKey isCache:isCache tint:model.queryFailureHint requestModel:model];
             }];
         } else if (requestType == RequestTypeMultiUpload) {
-            [session POST:url parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+            [session POST:url parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
                 for (NSInteger i = 0; i < dataArray.count; i++) {
                     NSData *imageData = [dataArray objectAtIndex:i];
                     
@@ -248,11 +250,13 @@
                     [formData appendPartWithFileData:imageData name:name fileName:fileName mimeType:model.imageMimeType];
                 }
             } progress:^(NSProgress * _Nonnull uploadProgress) {
+                NSLog(@"======> %f", (float)uploadProgress.completedUnitCount / (float)uploadProgress.totalUnitCount);
+                
                 NetDataReturnModel *returnModel = [[NetDataReturnModel alloc] init];
                 returnModel.type = ReturnProcess;
                 returnModel.process = (float)uploadProgress.completedUnitCount / (float)uploadProgress.totalUnitCount;
                 [subscriber sendNext:returnModel];
-                [subscriber sendCompleted];
+//                [subscriber sendCompleted];
             } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 [self dealWithSubscriber:subscriber responseObject:responseObject cache:cache isCache:isCache cacheKey:cacheKey requestModel:model];
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
