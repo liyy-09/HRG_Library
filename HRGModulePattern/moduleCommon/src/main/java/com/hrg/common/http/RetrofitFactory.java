@@ -46,6 +46,7 @@ public class RetrofitFactory {
             .cache(getCache())
             .build();
 
+    // ！！！只初始化一次RetrofitService，如果baseUrl改变了，则这个Service是需要重新初始化的！！！
     private static RetrofitService retrofitService = new Retrofit.Builder()
             .baseUrl("http://60.174.207.15:8085/ztlapi/")// TODO
             .addConverterFactory(GsonConverterFactory.create())// 添加Gson转换器
