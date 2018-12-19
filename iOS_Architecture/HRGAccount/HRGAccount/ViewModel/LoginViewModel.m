@@ -62,7 +62,7 @@
 
 - (RACCommand *) loginCommand {
     if (!_loginCommand) {
-        _loginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+        _loginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id x) {
             // 极光registrationID
             NSString *regid = [[UseInfoLocalData sharedInstance] getRegistrationID];
             

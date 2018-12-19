@@ -19,4 +19,12 @@
 
 @property (nonatomic, strong) RACSubject *tokenSubject;
 
+/**
+ 统一处理token失效
+
+ @param model 请求的结果
+ @return token是否失效
+ */
+- (BOOL) isReturnValidToken:(NetDataReturnModel *)model command:(RACCommand *)command;
+
 @end

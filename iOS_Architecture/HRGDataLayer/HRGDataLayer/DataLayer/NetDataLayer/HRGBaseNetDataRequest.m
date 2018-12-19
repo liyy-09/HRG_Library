@@ -317,11 +317,7 @@
         NSDictionary *userInfo = error.userInfo;
         NSString *desc = userInfo[@"NSLocalizedDescription"];
         if ([desc containsString:@"401"]) {
-            // 即使取缓存数据，如果token失效，依旧强调token失效 --- 登录接口千万不可返回这个，否则就是死循环
-            NetDataReturnModel *returnModel = [[NetDataReturnModel alloc] init];
-            returnModel.type = ReturnValidToken;
-            [subscriber sendNext:returnModel];
-            [subscriber sendCompleted];
+            [self validTokenWithSubscriber:subscriber];
             
             return;
         }
@@ -393,11 +389,7 @@
                 [subscriber sendNext:returnModel];
                 [subscriber sendCompleted];
             } else if (resultValue && ([resultValue isEqualToString:model.inValidTokenCode] || [resultValue isEqualToString:model.nullTokenCode])) {// token失效
-                // 即使取缓存数据，如果token失效，依旧强调token失效 --- 登录接口千万不可返回这个，否则就是死循环
-                NetDataReturnModel *returnModel = [[NetDataReturnModel alloc] init];
-                returnModel.type = ReturnValidToken;
-                [subscriber sendNext:returnModel];
-                [subscriber sendCompleted];
+                [self validTokenWithSubscriber:subscriber];
             } else {
                 id message = [response objectForKey:model.msgKey];// @"msg"
                 
@@ -434,6 +426,16 @@
             [subscriber sendCompleted];
         }
     }
+}
+
+#pragma mark - ReturnValidToken
+
+- (void) validTokenWithSubscriber:(id <RACSubscriber>)subscriber {
+    // 即使取缓存数据，如果token失效，依旧强调token失效 --- 登录接口千万不可返回这个，否则就是死循环
+    NetDataReturnModel *returnModel = [[NetDataReturnModel alloc] init];
+    returnModel.type = ReturnValidToken;
+    [subscriber sendNext:returnModel];
+    [subscriber sendCompleted];
 }
 
 @end

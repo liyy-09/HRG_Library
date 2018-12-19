@@ -109,6 +109,10 @@
     if (account && psw && ![account isEqualToString:@""] && ![psw isEqualToString:@""]) {
         // 有帐号密码，则需要更新Token
         LoginViewModel *loginViewModel = [[LoginViewModel alloc] init];
+        Account *model = [[Account alloc] init];
+        model.account = account;
+        model.pwd = psw;
+        loginViewModel.account = model;
         [loginViewModel.loginCommand execute:nil];
         
         [loginViewModel.loginResultSubject subscribeNext:^(id x) {

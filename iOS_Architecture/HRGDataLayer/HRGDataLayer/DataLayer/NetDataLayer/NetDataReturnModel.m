@@ -18,4 +18,20 @@
     return _error;
 }
 
+- (id) result {
+    if (!_result) {
+        return @"";
+    }
+    
+    return _result;
+}
+
+- (void) setType:(ReturnType)type {
+    _type = type;
+    
+    if (_type == ReturnValidToken) {
+        
+    }
+}
+
 @end

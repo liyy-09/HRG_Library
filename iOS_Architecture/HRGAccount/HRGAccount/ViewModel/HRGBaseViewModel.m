@@ -48,4 +48,13 @@
     return _tokenSubject;
 }
 
+- (BOOL) isReturnValidToken:(NetDataReturnModel *)model command:(RACCommand *)command {
+    if (model.type == ReturnValidToken) {
+        [self.tokenSubject sendNext:command];
+        return NO;
+    }
+    
+    return YES;
+}
+
 @end
