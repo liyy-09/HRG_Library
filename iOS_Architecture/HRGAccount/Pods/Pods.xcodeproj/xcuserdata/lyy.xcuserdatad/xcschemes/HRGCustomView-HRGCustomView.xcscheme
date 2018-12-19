@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "38786AA429A644DD90F3F379467E25DE"
+               BlueprintIdentifier = "415804A2DB0F14C8C60DB76F0303EF3A"
                BuildableName = "HRGCustomView.bundle"
                BlueprintName = "HRGCustomView-HRGCustomView"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "38786AA429A644DD90F3F379467E25DE"
+            BlueprintIdentifier = "415804A2DB0F14C8C60DB76F0303EF3A"
             BuildableName = "HRGCustomView.bundle"
             BlueprintName = "HRGCustomView-HRGCustomView"
             ReferencedContainer = "container:Pods.xcodeproj">

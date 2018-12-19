@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A4A2DDED2C322A771A7A47692E7A5C2C"
+               BlueprintIdentifier = "25E2DC66DAA807E10DF97047F8E10238"
                BlueprintName = "HRGVendor"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libHRGVendor.a">

@@ -70,7 +70,9 @@
                                       @"password" : self.account.pwd,
                                       @"regid" : (regid ? regid : @"")
                                       };
-            return [self.request httpPostRequest:Login_url params:params requestModel:nil];
+//            return [self.request httpPostRequest:Login_url params:params requestModel:nil];
+            
+            return [self.request httpGetRequest:@"http://60.174.207.15:8085/ztlapi/news/page" params:nil requestModel:nil];
         }];
     }
     

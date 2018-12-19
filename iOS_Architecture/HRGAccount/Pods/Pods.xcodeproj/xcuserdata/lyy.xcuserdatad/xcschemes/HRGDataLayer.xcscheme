@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A954CD2B791D692C2F14CBBD9DC8F806"
+               BlueprintIdentifier = "FB97694CE1ABBE1E9B82AE03F0D76607"
                BlueprintName = "HRGDataLayer"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libHRGDataLayer.a">

@@ -6,12 +6,12 @@
 //  Copyright © 2018年 liyy. All rights reserved.
 //
 
-#import "HRGBaseNetDataRequest.h"
+#import "HRGBaseNetDataRequest_Backup.h"
 #import <YYKit/YYKit.h>
 #import "YYCacheManager.h"
 #import "LoginInfoLocalData.h"
 
-@implementation HRGBaseNetDataRequest
+@implementation HRGBaseNetDataRequest_Backup
 
 #pragma mark - 各种请求方式
 
@@ -121,34 +121,34 @@
     // 设置cache和cacheKey
     YYCache *cache = [[YYCache alloc] initWithName:HttpCache];
     NSString *cacheKey = [[BaseNetDataRequestTool sharedInstance] gainCacheKeyWithUrlStr:url paramsForCacheKey:params tokenKey:model.tokenKey];
-//
-//    if (isPriorCache) {
-//        // 优先使用缓存，不要提示
-//        model.dataFromCacheHint = nil;
-//
-//        // 根据网址从Cache中取数据
-//        id cacheData = [cache objectForKey:cacheKey];// cacheData 缓存内容
-//        if (cacheData) {
-//            return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-//                // 既然优先使用缓存，那就跟token无关了，则loginSuccessBlock设置空, 直接取缓存，所以isPriorUseCache=NO
-//                [self gainCacheDataWithSubscriber:subscriber error:nil cache:cache cacheKey:cacheKey isCache:YES tint:model.offNetHint requestModel:model];
-//
-//                return nil;
-//            }];
-//        }
-//    }
     
-//    // 判断网络状态
-//    if ([[BaseNetDataRequestTool sharedInstance] isNetworkEnable]) {
+    if (isPriorCache) {
+        // 优先使用缓存，不要提示
+        model.dataFromCacheHint = nil;
+        
+        // 根据网址从Cache中取数据
+        id cacheData = [cache objectForKey:cacheKey];// cacheData 缓存内容
+        if (cacheData) {
+            return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+                // 既然优先使用缓存，那就跟token无关了，则loginSuccessBlock设置空, 直接取缓存，所以isPriorUseCache=NO
+                [self gainCacheDataWithSubscriber:subscriber error:nil cache:cache cacheKey:cacheKey isCache:YES tint:model.offNetHint requestModel:model];
+                
+                return nil;
+            }];
+        }
+    }
+    
+    // 判断网络状态
+    if ([[BaseNetDataRequestTool sharedInstance] isNetworkEnable]) {
         return [self requestWithURL:url params:params requestType:requestType isCache:isCache cache:cache cacheKey:cacheKey imageName:name fileName:fileName withData:data withDataArray:dataArray requestModel:model];
-//    } else {
-//        // 没网络直接取缓存数据
-//        return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-//            [self gainCacheDataWithSubscriber:subscriber error:nil cache:cache cacheKey:cacheKey isCache:isCache tint:model.offNetHint requestModel:model];
-//
-//            return nil;
-//        }];
-//    }
+    } else {
+        // 没网络直接取缓存数据
+        return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+            [self gainCacheDataWithSubscriber:subscriber error:nil cache:cache cacheKey:cacheKey isCache:isCache tint:model.offNetHint requestModel:model];
+            
+            return nil;
+        }];
+    }
 }
 
 /**
@@ -177,10 +177,6 @@
         // 调出请求头
         session.requestSerializer = [AFJSONRequestSerializer serializer];
         session.requestSerializer.timeoutInterval = 20;// 超时时间
-        
-        session.requestSerializer.cachePolicy = NSURLRequestReturnCacheDataElseLoad;
-        [session.requestSerializer setValue:@"public, max-age=30" forHTTPHeaderField:@"Cache-Control"];
-        
         //将token封装入请求头
         NSString *token = [[LoginInfoLocalData sharedInstance] getLoginModel].token;
         if (token) {

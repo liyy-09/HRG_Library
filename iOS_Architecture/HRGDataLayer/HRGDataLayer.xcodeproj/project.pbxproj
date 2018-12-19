@@ -15,12 +15,13 @@
 		046B874321A2A7F2007A3AF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B874221A2A7F2007A3AF5 /* main.m */; };
 		6813A9E621A2C59900E4267B /* BaseNetDataRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6813A9D221A2C59900E4267B /* BaseNetDataRequestTool.m */; };
 		6813A9E721A2C59900E4267B /* NetDataReturnModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6813A9D321A2C59900E4267B /* NetDataReturnModel.m */; };
-		6813A9E821A2C59900E4267B /* HRGBaseNetDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6813A9D821A2C59900E4267B /* HRGBaseNetDataRequest.m */; };
+		6813A9E821A2C59900E4267B /* HRGBaseNetDataRequest_Backup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6813A9D821A2C59900E4267B /* HRGBaseNetDataRequest_Backup.m */; };
 		6813A9E921A2C59900E4267B /* BaseNetDataRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6813A9D921A2C59900E4267B /* BaseNetDataRequestModel.m */; };
 		6813A9EA21A2C59900E4267B /* YYCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6813A9DA21A2C59900E4267B /* YYCacheManager.m */; };
 		6813A9EB21A2C59900E4267B /* HRGBaseLocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6813A9DB21A2C59900E4267B /* HRGBaseLocalData.m */; };
 		6813A9EC21A2C59900E4267B /* UseInfoLocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6813A9DE21A2C59900E4267B /* UseInfoLocalData.m */; };
 		6813A9EE21A2C59900E4267B /* LoginInfoLocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6813A9E421A2C59900E4267B /* LoginInfoLocalData.m */; };
+		681BE9A521CA51320090DEBB /* HRGBaseNetDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 681BE9A421CA51320090DEBB /* HRGBaseNetDataRequest.m */; };
 		68E637CC21A3DE480036CD86 /* MapLocLocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E637CA21A3DE470036CD86 /* MapLocLocalData.m */; };
 		68E637CF21A3DEFE0036CD86 /* AMapLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E637CD21A3DEFE0036CD86 /* AMapLocationModel.m */; };
 		68E637D421A3E6700036CD86 /* VersionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E637D221A3E6700036CD86 /* VersionTool.m */; };
@@ -40,13 +41,13 @@
 		046B874221A2A7F2007A3AF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		228406A619F6FCE03DDB3484 /* Pods-HRGDataLayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRGDataLayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRGDataLayer/Pods-HRGDataLayer.release.xcconfig"; sourceTree = "<group>"; };
 		6813A9CF21A2C59900E4267B /* HRGBaseLocalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRGBaseLocalData.h; sourceTree = "<group>"; };
-		6813A9D121A2C59900E4267B /* HRGBaseNetDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRGBaseNetDataRequest.h; sourceTree = "<group>"; };
+		6813A9D121A2C59900E4267B /* HRGBaseNetDataRequest_Backup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRGBaseNetDataRequest_Backup.h; sourceTree = "<group>"; };
 		6813A9D221A2C59900E4267B /* BaseNetDataRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetDataRequestTool.m; sourceTree = "<group>"; };
 		6813A9D321A2C59900E4267B /* NetDataReturnModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetDataReturnModel.m; sourceTree = "<group>"; };
 		6813A9D421A2C59900E4267B /* BaseNetDataRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetDataRequestModel.h; sourceTree = "<group>"; };
 		6813A9D621A2C59900E4267B /* BaseNetDataRequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetDataRequestTool.h; sourceTree = "<group>"; };
 		6813A9D721A2C59900E4267B /* NetDataReturnModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetDataReturnModel.h; sourceTree = "<group>"; };
-		6813A9D821A2C59900E4267B /* HRGBaseNetDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRGBaseNetDataRequest.m; sourceTree = "<group>"; };
+		6813A9D821A2C59900E4267B /* HRGBaseNetDataRequest_Backup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRGBaseNetDataRequest_Backup.m; sourceTree = "<group>"; };
 		6813A9D921A2C59900E4267B /* BaseNetDataRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetDataRequestModel.m; sourceTree = "<group>"; };
 		6813A9DA21A2C59900E4267B /* YYCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCacheManager.m; sourceTree = "<group>"; };
 		6813A9DB21A2C59900E4267B /* HRGBaseLocalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRGBaseLocalData.m; sourceTree = "<group>"; };
@@ -55,6 +56,8 @@
 		6813A9E021A2C59900E4267B /* LoginInfoLocalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInfoLocalData.h; sourceTree = "<group>"; };
 		6813A9E221A2C59900E4267B /* UseInfoLocalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseInfoLocalData.h; sourceTree = "<group>"; };
 		6813A9E421A2C59900E4267B /* LoginInfoLocalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInfoLocalData.m; sourceTree = "<group>"; };
+		681BE9A321CA51320090DEBB /* HRGBaseNetDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRGBaseNetDataRequest.h; sourceTree = "<group>"; };
+		681BE9A421CA51320090DEBB /* HRGBaseNetDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRGBaseNetDataRequest.m; sourceTree = "<group>"; };
 		68E637CA21A3DE470036CD86 /* MapLocLocalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocLocalData.m; sourceTree = "<group>"; };
 		68E637CB21A3DE470036CD86 /* MapLocLocalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLocLocalData.h; sourceTree = "<group>"; };
 		68E637CD21A3DEFE0036CD86 /* AMapLocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMapLocationModel.m; sourceTree = "<group>"; };
@@ -139,14 +142,16 @@
 		6813A9D021A2C59900E4267B /* NetDataLayer */ = {
 			isa = PBXGroup;
 			children = (
-				6813A9D121A2C59900E4267B /* HRGBaseNetDataRequest.h */,
-				6813A9D821A2C59900E4267B /* HRGBaseNetDataRequest.m */,
+				681BE9A321CA51320090DEBB /* HRGBaseNetDataRequest.h */,
+				681BE9A421CA51320090DEBB /* HRGBaseNetDataRequest.m */,
 				6813A9D421A2C59900E4267B /* BaseNetDataRequestModel.h */,
 				6813A9D921A2C59900E4267B /* BaseNetDataRequestModel.m */,
 				6813A9D721A2C59900E4267B /* NetDataReturnModel.h */,
 				6813A9D321A2C59900E4267B /* NetDataReturnModel.m */,
 				6813A9D621A2C59900E4267B /* BaseNetDataRequestTool.h */,
 				6813A9D221A2C59900E4267B /* BaseNetDataRequestTool.m */,
+				6813A9D121A2C59900E4267B /* HRGBaseNetDataRequest_Backup.h */,
+				6813A9D821A2C59900E4267B /* HRGBaseNetDataRequest_Backup.m */,
 			);
 			path = NetDataLayer;
 			sourceTree = "<group>";
@@ -278,7 +283,8 @@
 				68E637CF21A3DEFE0036CD86 /* AMapLocationModel.m in Sources */,
 				046B873821A2A7F1007A3AF5 /* ViewController.m in Sources */,
 				6813A9E721A2C59900E4267B /* NetDataReturnModel.m in Sources */,
-				6813A9E821A2C59900E4267B /* HRGBaseNetDataRequest.m in Sources */,
+				6813A9E821A2C59900E4267B /* HRGBaseNetDataRequest_Backup.m in Sources */,
+				681BE9A521CA51320090DEBB /* HRGBaseNetDataRequest.m in Sources */,
 				68E637CC21A3DE480036CD86 /* MapLocLocalData.m in Sources */,
 				68E637D421A3E6700036CD86 /* VersionTool.m in Sources */,
 				6813A9EE21A2C59900E4267B /* LoginInfoLocalData.m in Sources */,

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "50F17BD4D47F2D966E38A06D97D47F33"
+               BlueprintIdentifier = "02D306821E15623A6495EED580C0D81C"
                BlueprintName = "HRGCustomView"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libHRGCustomView.a">

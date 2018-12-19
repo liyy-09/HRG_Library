@@ -29,16 +29,7 @@ typedef NS_ENUM(NSInteger, RequestType) {
 /**
  可使用缓存的AFNetworking请求
  */
-@interface HRGBaseNetDataRequest : NSObject
-
-/**
- NSURLRequestUseProtocolCachePolicy // 默认的缓存策略（取决于协议）
- NSURLRequestReloadIgnoringLocalCacheData// 忽略缓存，重新请求
- NSURLRequestReloadIgnoringCacheData = NSURLRequestReloadIgnoringLocalCacheData,
- NSURLRequestReturnCacheDataElseLoad    // 有缓存就用缓存，没有缓存就重新请求
- NSURLRequestReturnCacheDataDontLoad    // 有缓存就用缓存，没有缓存就不发请求，当做请求出错处理（用于离线模式）
- */
-@property (nonatomic, assign) NSURLRequestCachePolicy cachePolicy;
+@interface HRGBaseNetDataRequest_Backup : NSObject
 
 #pragma mark - Delete方法
 
