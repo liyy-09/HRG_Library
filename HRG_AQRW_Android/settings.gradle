@@ -1,0 +1,15 @@
+// 参考：https://github.com/guiying712/AndroidModulePattern#androidmodulepattern
+
+// 空壳工程
+include ':moduleApp'
+
+// 主业务组件
+include ':moduleMain'
+
+// 子业务组件
+include ':moduleAccount'    // 账号模块：登陆、注册
+include ':moduleMine'       // 我的模块：关于我们、清除缓存等
+include ':moduleHome'       // 首页模块：充值、记录
+
+// 功能组件
+include ':moduleCommon'
